@@ -1,0 +1,366 @@
+Build a fully responsive front-end website using React + Vite + Tailwind CSS + JavaScript.
+The website theme must look cultural, heritage-inspired, warm, and elegant with South-Indian Kolam aesthetics.
+The website name is “KolamCraft – Traditional Kolam Generator”.
+
+🔥 PROJECT REQUIREMENTS
+⭐ 1. Landing Page (Public)
+
+Create a beautiful landing page with:
+
+Sections
+
+What is Kolam?
+
+Heritage, history, cultural importance
+
+Illustrations + decorative kolam patterns
+
+Elegant serif headings + warm color palette (maroon, gold, ivory, sand brown)
+
+Buttons
+
+Create Kolam → redirect to Login page
+
+Login / Signup links in the navbar
+
+Navbar links
+
+Home
+
+About Kolam
+
+Create Kolam
+
+Login / Signup
+
+Footer
+
+Credits
+
+Social links
+
+Copyright
+
+Heritage divider lines
+
+Temple-style styling
+
+Background
+
+Use a heritage textured background:
+
+Brown temple stone
+
+Faded mandala
+
+Soft ivory overlays
+
+Subtle animated patterns
+
+Light parallax animation
+
+⭐ 2. Authentication System
+
+Create:
+
+Login Page
+
+Fields:
+
+Email
+
+Password
+Buttons:
+
+Login
+
+“Go to Signup”
+
+Signup Page
+
+Fields:
+
+Name
+
+Email
+
+Password
+Buttons:
+
+Signup
+
+“Go to Login”
+
+Auth Logic
+
+Use localStorage key kolamcraft_user
+
+On successful login/signup redirect → /dashboard
+
+Use AuthGuard component to protect routes (if not logged in → redirect to /login)
+
+⭐ 3. Homepage Dashboard (After Login)
+
+Once user logs in → send them to /dashboard.
+
+This page will show 4 options:
+
+1. About Kolam
+
+A page explaining:
+
+History
+
+Culture
+
+Types of kolams
+
+Symbolism
+
+Images
+
+Decorative separators
+
+2. Create Kolam (Kolam Generator)
+
+Link to /generate which contains:
+
+⭐ 4. Kolam Generator Page
+
+This page has two methods:
+
+A. Upload JPG/PNG → Generate Related Kolams
+
+Flow:
+
+User uploads an image
+
+Show loading animation
+
+Display 8 related kolam designs (use placeholders)
+
+When user selects any of them → navigate to /editor (color editing page)
+
+B. Create Kolam using Grid & Symmetry
+
+Include:
+
+Grid size slider (1–20)
+
+Symmetry options:
+
+Vertical
+
+Horizontal
+
+Radial
+
+4-way
+
+Canvas placeholder where kolam structure would appear
+
+Button:
+
+Continue to Color Editor → /editor
+
+⭐ 5. Color Filling & Editing Page (Editor)
+
+A canvas page where the chosen kolam appears.
+
+Include:
+
+Tools
+
+Fill color
+
+Erase stroke
+
+Undo
+
+Reset
+
+Color palette with 10–15 colors
+
+Buttons:
+
+Download PNG
+
+Download SVG
+
+Back to Generator
+
+(Use placeholders for now — actual drawing will be added later.)
+
+⭐ 6. Explore Page
+
+A gallery that shows:
+
+20–30 kolam images
+
+Name
+
+Description
+
+Masonry or grid layout
+
+Responsive design
+
+Hover animation
+
+Page route: /explore
+
+⭐ 7. Logout Behavior
+
+Add “Logout” button to dashboard
+
+On click:
+
+Clear localStorage
+
+Redirect to /create-kolam on landing page
+
+User must log in again
+
+⭐ 8. Routing Rules
+
+Use react-router-dom and create all routes:
+
+/ → Landing Page
+
+/create-kolam → Public prompt page (tells user to log in first)
+
+/login
+
+/signup
+
+/dashboard (protected)
+
+/about-kolam (protected)
+
+/generate (protected)
+
+/explore (protected)
+
+/editor (protected)
+
+⭐ 9. Reusable Components
+
+Create reusable components:
+
+Navbar (responsive + mobile menu)
+
+Footer (heritage look)
+
+HeritageBackground wrapper
+
+AnimatedSvgPattern background pattern
+
+PageCard (for dashboard options)
+
+SectionHeader
+
+AuthGuard
+
+ImageGrid
+
+⭐ 10. Theme & Styling
+
+Use TailwindCSS with extended theme:
+
+Colors:
+
+kolam-maroon: #8c2f0c
+
+kolam-gold: #d8b98a
+
+kolam-ivory: #fff8ef
+
+kolam-sand: #b57a50
+
+Fonts:
+
+Headings: Playfair Display
+
+Body: Inter / Sans Serif
+
+Effects:
+
+Soft shadows
+
+Glow effects
+
+Heritage floral borders
+
+Fade-in
+
+Slow parallax zoom
+
+Floating kolam line animations
+
+⭐ 11. Assets
+
+Add placeholder images in src/assets:
+
+hero-kolam.jpg
+
+heritage-bg.jpg
+
+kolam-placeholder-1.jpg … kolam-placeholder-8.jpg
+
+⭐ 12. Future Backend (Important for scaffolding)
+
+Prepare the frontend for future backend:
+
+Flask Ready
+
+Create services/api.js:
+
+Base URL: "http://127.0.0.1:5000/api"
+
+Helper functions: GET, POST (empty for now)
+
+Comment inside explaining how Flask API will later be connected
+
+Firebase Ready
+
+Add services/firebase.js:
+
+Comment with instructions for adding Firebase config later
+
+No Firebase logic required now
+
+⭐ 13. Output Requirements
+
+Replit AI must generate:
+
+Full React + Vite project
+
+Full Tailwind setup
+
+All components
+
+All pages
+
+All routes
+
+All placeholder assets
+
+Working auth (localStorage)
+
+Fully responsive UI
+
+Rich heritage theme
+
+Comments explaining future backend integration
+
+🎯 Final Goal
+
+Generate the entire website scaffold so I can later add:
+
+Flask backend
+
+Firebase database
+
+Kolam generation API
+
+Make sure the website is beautiful, heritage-themed, well-structured, and easy to expand.
