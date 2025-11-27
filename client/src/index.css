@@ -191,6 +191,6 @@
   overflow: hidden;
   display: inline-block;
   animation:
-    typewriter 2.5s steps(20) 0.5s forwards,
+    typewriter 4.0s steps(20) 0.5s forwards,
     blinkCursor 700ms steps(20) infinite;
 }
